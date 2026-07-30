@@ -19,7 +19,7 @@ body{
     align-items:center;
     padding:15px 60px;
     border-bottom:3px solid red;
-   position: fixed;
+   
 }
 
 /* Logo */
@@ -541,5 +541,235 @@ transition: all 0.5s;
 
     .card p{
         font-size: 15px;
+    }
+}
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media (max-width:768px){
+
+    /* Header */
+    .menu{
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+        position: relative;
+    }
+
+    .logo h1{
+        font-size: 32px;
+    }
+
+    .logo img{
+        width: 60px;
+    }
+
+    .navbar{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .navbar a{
+        font-size: 18px;
+    }
+
+    .btn{
+        width: 100%;
+        max-width: 220px;
+    }
+
+    /* Hero */
+    .hero{
+        text-align: center;
+        padding: 20px;
+        font-size: 22px;
+    }
+
+    .hero h1{
+        font-size: 38px;
+    }
+
+    .span{
+        width: 90%;
+        height: auto;
+        font-size: 20px;
+    }
+
+    .span:hover{
+        width: 95%;
+        height: auto;
+    }
+
+    .but2 button{
+        width: 180px;
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    /* About */
+    .contener{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .img3,
+    .about{
+        width:100%;
+    }
+
+    .img3 img{
+        width:100%;
+        height:auto;
+    }
+
+    .but5{
+        width:180px;
+        height:50px;
+    }
+
+    /* Title */
+    .two h1{
+        font-size:32px;
+    }
+
+    .two p{
+        font-size:18px;
+    }
+
+    .tital{
+        font-size:40px;
+    }
+
+    /* Products */
+    .bakery-item{
+        grid-template-columns:1fr;
+        margin:15px;
+    }
+
+    .bakery-item .product{
+        width:100%;
+        height:auto;
+        padding:20px;
+    }
+
+    .bakery-item .product img{
+        width:100%;
+        height:auto;
+    }
+
+    .bakery-item .product h3{
+        font-size:26px;
+    }
+
+    .bakery-item .product button{
+        width:160px;
+        height:50px;
+    }
+
+    /* Home */
+    .bg-home{
+        height:auto;
+        padding:50px 20px;
+        justify-content:center;
+        text-align:center;
+    }
+
+    .bg-home .home1{
+        width:100%;
+        font-size:20px;
+    }
+
+    .bg-home .home1 h1{
+        font-size:36px;
+    }
+
+    .bg-home .home1 button{
+        width:220px;
+        height:50px;
+        font-size:18px;
+    }
+
+    /* Footer */
+    .footer-top,
+    .footer-links{
+        flex-direction:column;
+        text-align:center;
+        gap:30px;
+    }
+
+    .subscribe{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .subscribe input,
+    .subscribe button{
+        width:100%;
+    }
+
+    /* Features */
+    .features{
+        grid-template-columns:1fr;
+    }
+}
+
+
+/* ==========================
+   SMALL MOBILE
+========================== */
+
+@media (max-width:480px){
+
+    .logo h1{
+        font-size:26px;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .hero{
+        font-size:18px;
+    }
+
+    .tital{
+        font-size:30px;
+    }
+
+    .two h1{
+        font-size:26px;
+    }
+
+    .card{
+        padding:20px;
+    }
+}
+.video{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.video video{
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* Mobile */
+@media (max-width:768px){
+    .video{
+        padding: 10px;
+    }
+
+    .video video{
+        width: 100%;
+        height: auto;
     }
 }
