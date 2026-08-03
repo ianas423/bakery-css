@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quality Ingredients</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f8f5f2;
+}
+
+.ingredients{
+    max-width:1200px;
+    margin:60px auto;
+    padding:20px;
+}
+
+.ingredients h1{
+    text-align:center;
+    color:#8B4513;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.ingredients p{
+    text-align:center;
+    color:#555;
+    margin-bottom:40px;
+    font-size:18px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    padding:30px 20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+
+.icon{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.card h2{
+    color:#8B4513;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#666;
+    line-height:1.6;
+    font-size:15px;
+}
+
+.btn{
+    display:block;
+    width:220px;
+    margin:40px auto;
+    text-align:center;
+    text-decoration:none;
+    padding:15px;
+    border-radius:40px;
+    background:linear-gradient(135deg,#ff9800,#ff5722);
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    background:linear-gradient(135deg,#ff5722,#ff9800);
+}
+
+@media(max-width:768px){
+
+.ingredients h1{
+    font-size:30px;
+}
+
+.ingredients p{
+    font-size:16px;
+}
+
+.card{
+    padding:20px;
+}
+
+.btn{
+    width:180px;
+}
+}
+</style>
+
+</head>
+<body>
+
+<section class="ingredients">
+
+<h1>🌾 Quality Ingredients</h1>
+
+<p>
+We use only the freshest and finest ingredients to bake every product with love and care.
+</p>
+
+<div class="container">
+
+<div class="card">
+<div class="icon">🌾</div>
+<h2>Premium Flour</h2>
+<p>High-quality wheat flour for soft and fresh bakery products.</p>
+</div>
+
+<div class="card">
+<div class="icon">🧈</div>
+<h2>Fresh Butter</h2>
+<p>Pure creamy butter gives every bite a rich and delicious taste.</p>
+</div>
+
+<div class="card">
+<div class="icon">🥚</div>
+<h2>Farm Fresh Eggs</h2>
+<p>Fresh eggs every day for fluffy cakes and soft breads.</p>
+</div>
+
+<div class="card">
+<div class="icon">🥛</div>
+<h2>Organic Milk</h2>
+<p>Natural milk makes our bakery items creamy and healthy.</p>
+</div>
+
+<div class="card">
+<div class="icon">🍫</div>
+<h2>Premium Chocolate</h2>
+<p>Made with rich chocolate for the perfect sweet experience.</p>
+</div>
+
+<div class="card">
+<div class="icon">🍓</div>
+<h2>Fresh Fruits</h2>
+<p>Seasonal fruits are used to make our desserts fresh and flavorful.</p>
+</div>
+
+</div>
+
+<a href="#" class="btn">Order Fresh Now</a>
+
+</section>
+
+</body>
+</html>

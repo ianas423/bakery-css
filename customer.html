@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Satisfaction</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#fff9f2,#fde9d2,#fff4e6);
+}
+
+.customer{
+    width:100%;
+    padding:80px 8%;
+}
+
+.heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.heading span{
+    color:#ff8c00;
+    font-size:18px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.heading h1{
+    font-size:55px;
+    color:#5a3318;
+    margin:15px 0;
+}
+
+.heading p{
+    max-width:700px;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+}
+
+/* Stats */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-bottom:70px;
+}
+
+.stat-card{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.stat-card:hover{
+    transform:translateY(-10px);
+}
+
+.stat-card h2{
+    font-size:45px;
+    color:#ff7b00;
+}
+
+.stat-card h3{
+    color:#5a3318;
+    margin:15px 0;
+}
+
+.stat-card p{
+    color:#666;
+    line-height:1.6;
+}
+
+/* Reviews */
+
+.review-section{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.review{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.review:hover{
+    transform:translateY(-8px);
+}
+
+.review h2{
+    font-size:45px;
+}
+
+.review h4{
+    margin-top:15px;
+    color:#5a3318;
+}
+
+.review span{
+    color:#ff9800;
+    font-size:18px;
+}
+
+.review p{
+    margin-top:15px;
+    color:#666;
+    line-height:1.8;
+}
+
+/* Button */
+
+.btn{
+    display:block;
+    width:230px;
+    margin:60px auto 0;
+    text-align:center;
+    text-decoration:none;
+    background:linear-gradient(135deg,#ff9800,#ff5722);
+    color:white;
+    padding:16px;
+    border-radius:40px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 12px 25px rgba(255,87,34,.3);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.heading h1{
+    font-size:36px;
+}
+
+.heading p{
+    font-size:15px;
+}
+
+.review{
+    text-align:center;
+}
+
+.btn{
+    width:100%;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="customer">
+
+<div class="heading">
+
+<span>OUR HAPPY CUSTOMERS</span>
+
+<h1>😊 Customer Satisfaction</h1>
+
+<p>
+Our customers are the heart of our bakery. Every loaf of bread, cake, and pastry is baked with love to bring smiles and unforgettable moments.
+</p>
+
+</div>
+
+<div class="stats">
+
+<div class="stat-card">
+<h2>98%</h2>
+<h3>Satisfaction Rate</h3>
+<p>Thousands of happy customers trust our bakery every day.</p>
+</div>
+
+<div class="stat-card">
+<h2>50K+</h2>
+<h3>Happy Customers</h3>
+<p>Serving delicious bakery products with consistent quality.</p>
+</div>
+
+<div class="stat-card">
+<h2>15+</h2>
+<h3>Years Experience</h3>
+<p>Delivering fresh baked products with expert craftsmanship.</p>
+</div>
+
+<div class="stat-card">
+<h2>24/7</h2>
+<h3>Customer Support</h3>
+<p>Always ready to help with your orders and questions.</p>
+</div>
+
+</div>
+
+<div class="review-section">
+
+<div class="review">
+
+<h2>⭐⭐⭐⭐⭐</h2>
+
+<h4>Sarah Ahmed</h4>
+
+<span>Regular Customer</span>
+
+<p>
+"The cakes are always fresh and delicious. The quality is amazing, and the staff is friendly. Highly recommended!"
+</p>
+
+</div>
+
+<div class="review">
+
+<h2>⭐⭐⭐⭐⭐</h2>
+
+<h4>Ali Khan</h4>
+
+<span>Food Lover</span>
+
+<p>
+"I ordered bread and pastries, and everything tasted perfect. Fast delivery and excellent service every time."
+</p>
+
+</div>
+
+<div class="review">
+
+<h2>⭐⭐⭐⭐⭐</h2>
+
+<h4>Ayesha Noor</h4>
+
+<span>Happy Customer</span>
+
+<p>
+"Beautiful custom cakes with incredible taste. My family loved every bite. Thank you for making our celebration special."
+</p>
+
+</div>
+
+</div>
+
+<a href="#" class="btn">Read More Reviews</a>
+
+</section>
+
+</body>
+</html>

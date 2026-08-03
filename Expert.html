@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expert Bakers</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#fffaf3,#ffe7c7,#fff5e8);
+}
+
+.bakers{
+    width:100%;
+    padding:80px 8%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.title span{
+    color:#ff8c00;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.title h1{
+    margin:15px 0;
+    font-size:55px;
+    color:#5b341d;
+}
+
+.title p{
+    max-width:700px;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.circle{
+    width:380px;
+    height:380px;
+    background:linear-gradient(135deg,#ffb347,#ff7b00);
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.circle span{
+    font-size:150px;
+}
+
+.content{
+    flex:1;
+}
+
+.content h2{
+    color:#5b341d;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.content p{
+    color:#555;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.box{
+    background:white;
+    padding:20px;
+    border-radius:18px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.box:hover{
+    transform:translateY(-8px);
+}
+
+.box h3{
+    color:#ff7b00;
+    margin-bottom:8px;
+}
+
+.box p{
+    font-size:14px;
+    margin:0;
+}
+
+.stats{
+    margin-top:40px;
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.stat{
+    background:#5b341d;
+    color:white;
+    padding:18px 28px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.stat h1{
+    color:#ffb347;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    text-decoration:none;
+    background:linear-gradient(135deg,#ff9800,#ff5722);
+    color:white;
+    padding:15px 35px;
+    border-radius:40px;
+    font-weight:bold;
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.title h1{
+    font-size:42px;
+}
+
+.container{
+    flex-direction:column;
+    text-align:center;
+}
+
+.skills{
+    grid-template-columns:1fr 1fr;
+}
+
+.stats{
+    justify-content:center;
+}
+
+}
+
+@media(max-width:768px){
+
+.circle{
+    width:280px;
+    height:280px;
+}
+
+.circle span{
+    font-size:110px;
+}
+
+.title h1{
+    font-size:32px;
+}
+
+.content h2{
+    font-size:30px;
+}
+
+.skills{
+    grid-template-columns:1fr;
+}
+
+.btn{
+    width:100%;
+    text-align:center;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<section class="bakers">
+
+<div class="title">
+
+<span>OUR TEAM</span>
+
+<h1>👨‍🍳 Expert Bakers</h1>
+
+<p>
+Our talented bakers combine years of experience with premium ingredients to create fresh breads, delicious cakes, pastries, and desserts that make every moment special.
+</p>
+
+</div>
+
+<div class="container">
+
+<div class="image">
+
+<div class="circle">
+<span>👨‍🍳</span>
+</div>
+
+</div>
+
+<div class="content">
+
+<h2>Crafted With Passion</h2>
+
+<p>
+Every recipe is prepared with care and attention to detail. Our expert bakers ensure every loaf, cake, and pastry is baked fresh daily with the highest quality ingredients.
+</p>
+
+<div class="skills">
+
+<div class="box">
+<h3>🥐 Fresh Baking</h3>
+<p>Prepared every morning with premium ingredients.</p>
+</div>
+
+<div class="box">
+<h3>🎂 Custom Cakes</h3>
+<p>Beautiful cakes for birthdays and celebrations.</p>
+</div>
+
+<div class="box">
+<h3>🍪 Handmade Cookies</h3>
+<p>Fresh cookies baked with rich butter and love.</p>
+</div>
+
+<div class="box">
+<h3>⭐ Premium Quality</h3>
+<p>Every product is checked before serving.</p>
+</div>
+
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<h1>15+</h1>
+<p>Years Experience</p>
+</div>
+
+<div class="stat">
+<h1>50K+</h1>
+<p>Happy Customers</p>
+</div>
+
+<div class="stat">
+<h1>100%</h1>
+<p>Fresh Daily</p>
+</div>
+
+</div>
+
+<a href="#" class="btn">Meet Our Bakers</a>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
