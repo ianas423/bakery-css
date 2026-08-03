@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet Bakery | Gallery</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#FFF8F2;
+}
+
+.gallery{
+padding:70px 8%;
+}
+
+.title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.title h1{
+font-size:45px;
+color:#8B4513;
+}
+
+.title p{
+color:#666;
+margin-top:10px;
+}
+
+.gallery-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+position:relative;
+overflow:hidden;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+cursor:pointer;
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+transition:.5s;
+display:block;
+}
+
+.card:hover img{
+transform:scale(1.1);
+}
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(139,69,19,.75);
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+opacity:0;
+transition:.5s;
+color:#fff;
+}
+
+.card:hover .overlay{
+opacity:1;
+}
+
+.overlay h3{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.overlay p{
+font-size:15px;
+text-align:center;
+padding:0 20px;
+}
+
+@media(max-width:768px){
+
+.title h1{
+font-size:35px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<section class="gallery">
+
+<div class="title">
+<h1>🍰 Our Gallery</h1>
+<p>Freshly baked with love every day.</p>
+</div>
+
+<div class="gallery-container">
+
+<div class="card">
+<img src="img/chocolte.jfif">
+<div class="overlay">
+<h3>Chocolate Cake</h3>
+<p>Rich & Delicious</p>
+</div>
+</div>
+
+<div class="card">
+<img src="img/Donut.jfif">
+<div class="overlay">
+<h3>Donuts</h3>
+<p>Soft & Sweet</p>
+</div>
+</div>
+
+<div class="card">
+<img src="img/cap.jfif">
+<div class="overlay">
+<h3>Cupcakes</h3>
+<p>Fresh Everyday</p>
+</div>
+</div>
+
+<div class="card">
+<img src="img/cookies.jfif">
+<div class="overlay">
+<h3>Cookies</h3>
+<p>Crunchy & Tasty</p>
+</div>
+</div>
+
+<div class="card">
+<img src="img/brobee.jfif">
+<div class="overlay">
+<h3>Brownies</h3>
+<p>Chocolate Lover's Choice</p>
+</div>
+</div>
+
+<div class="card">
+<img src="img/Butter Croissant.jfif">
+<div class="overlay">
+<h3>Cheesecake</h3>
+<p>Premium Quality</p>
+</div>
+</div>
+
+
+
+<div class="card">
+<img src="img/cheesecak.jfif">
+<div class="overlay">
+<h3>Cheesecake</h3>
+<p>Premium Quality</p>
+</div>
+</div>
+  
+
+<div class="card">
+<img src="img/cheesecak.jfif">
+<div class="overlay">
+<h3>Cheesecake</h3>
+<p>Premium Quality</p>
+</div>
+
+
+
+
+</section>
+
+</body>
+</html>

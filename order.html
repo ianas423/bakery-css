@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Now - Sweet Bakery</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#FFF8F2,#FFE6CC);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:30px;
+}
+
+.container{
+background:#fff;
+width:100%;
+max-width:700px;
+padding:40px;
+border-radius:20px;
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+h1{
+text-align:center;
+color:#8B4513;
+font-size:40px;
+margin-bottom:10px;
+}
+
+p{
+text-align:center;
+color:#666;
+margin-bottom:30px;
+}
+
+form{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+input,
+select,
+textarea{
+width:100%;
+padding:15px;
+border:2px solid #ddd;
+border-radius:10px;
+font-size:16px;
+outline:none;
+transition:.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+border-color:#D2691E;
+}
+
+textarea{
+grid-column:1/3;
+height:120px;
+resize:none;
+}
+
+button{
+grid-column:1/3;
+padding:16px;
+background:#8B4513;
+color:#fff;
+font-size:18px;
+font-weight:bold;
+border:none;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#D2691E;
+transform:translateY(-3px);
+}
+
+@media(max-width:700px){
+
+form{
+grid-template-columns:1fr;
+}
+
+textarea,
+button{
+grid-column:1;
+}
+
+h1{
+font-size:30px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>🍰 Order Now</h1>
+
+<p>Fill out the form below to order your favorite bakery items.</p>
+
+<form>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<select required>
+<option>Select Item</option>
+<option>Chocolate Cake</option>
+<option>Red Velvet Cake</option>
+<option>Donut</option>
+<option>Cupcake</option>
+<option>Cookies</option>
+<option>Brownie</option>
+<option>Croissant</option>
+<option>Cheesecake</option>
+<option>Muffin</option>
+<option>Apple Pie</option>
+</select>
+
+<input type="number" placeholder="Quantity" required>
+
+<input type="date" required>
+
+<textarea placeholder="Delivery Address or Special Instructions"></textarea>
+
+<button type="submit">🛒 Place Order</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

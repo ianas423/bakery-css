@@ -143,6 +143,10 @@ align-items: center;
     background-color: rgb(225, 77, 64);
     scale: 0.8;
 }
+.but2 button a{
+    color: black;
+    
+}
 
 
 .contener{
@@ -332,6 +336,10 @@ transition: all 0.5s;
 }
 .bg-home .home1 h1{
     color: #ffd700;
+}
+.bg-home .home1 button a{
+    color: rgb(216, 216, 141);
+    text-decoration: none;
 }
 
                                      /* stip11 */
