@@ -15,6 +15,7 @@ body{
     width:100%;
     background:#111;
     display:flex;
+  
     justify-content:space-between;
     align-items:center;
     padding:15px 60px;
@@ -74,18 +75,17 @@ body{
 }
 
 
-
-
-
                      /* <!-- SECTION hero --> */
 .hero{
   height: 100vh;
-  background-image: url(img/img2.jfif);
+  background-image: url(img/bakery2.jfif);
   color:#ffd700;
   font-size: 50px;
 display:flex;
 justify-content: center;
 align-items: center;
+background-repeat: no-repeat;
+background-size: cover;
   flex-direction: column;
   gap: 20px;
   transition: all;
@@ -93,17 +93,6 @@ align-items: center;
   
 }
 
-.hero h1{
-    animation: vibration 1s infinite;
-}
-
-@keyframes vibration{
-    0%{transform: translate(0);}
-    25%{transform: translate(2px,-2px);}
-    50%{transform: translate(-2px,2px);}
-    75%{transform: translate(2px,2px);}
-    100%{transform: translate(-2px,-2px);}
-}
 .span{
     font-size: 30px;
     color:red;
@@ -168,7 +157,15 @@ align-items: center;
 .img3{
     
     width: 50%;
+   
     border-radius: 40px;
+   
+    background-size: cover;
+   background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
 }
 .about{
     display: flex;
